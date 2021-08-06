@@ -1,0 +1,48 @@
+body {
+  background: black;
+}
+
+.header {
+  background: crimson;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 12pt;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  margin: 0 0 auto 0;
+  z-index: 1024;
+  height: 60px;
+  opacity: 1;
+  transition: position .4s,opacity .2s;
+}
+
+.wrapper{
+  display: flex;
+  padding-top: 50px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leftSideBar {
+  margin-left: 1%;  
+  background: navy;
+  width: 10%;
+  position: relative;
+  margin-top: 25px;
+  box-sizing: border-box;
+  
+}
+
+.site-content {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 1%;
+  width: 90%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;  
+  background: gold;
+  color: navy;
+}
