@@ -15,6 +15,7 @@ body {
   height: 60px;
   opacity: 1;
   transition: position .4s,opacity .2s;
+  position: fixed;
 }
 
 .wrapper{
