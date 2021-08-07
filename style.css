@@ -1,5 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: black;
+  font-family: "source sans pro", sans-serif;
+  width: 100%;
 }
 
 .header {
@@ -44,6 +52,68 @@ body {
   display: flex;
   flex: 1 1 auto;
   justify-content: center;  
-  background: gold;
+  background: #fff;
   color: navy;
 }
+
+/* Image gallery start */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;  
+  border-bottom: 3px solid #222;
+  padding-bottom: 10px;
+}
+
+.container .heading h3 span{
+  font-weight: 100;  
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn {
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+
+.container .btn a{
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+/* Image gallery end */
