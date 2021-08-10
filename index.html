@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
   <title>Official Drushyam Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,8 +16,8 @@
     
     <div id="navbar">
       <a href="#gallery">Gallery</a>
-      <a href="#">About Us</a>
-      <a href="#contact">Contact</a>
+      <a href="#about-us">About Us</a>
+      <a href="#footer">Contact</a>
     </div> 
     
   </div>
@@ -31,10 +34,20 @@
       
     </div>
 
-    <div class="site-content" id="gallery">
+    <div class="site-content">
       <!-- <p>This div will wrap the divs containing the contents of the page </p> -->
 
-      <div class='container'>
+      <div class="about-us" id="about-us">
+        <p class="brief">
+          Drushyam is one of the most integral and popular clubs of School of Engineering. A heaven for the creative, the Film section of the club will host events like Movie Making, Trailer Making, Ad-Making. The club will also be conducting various workshops and learning sessions on image-editing and video-editing softwares. As far as photography is concerned, with events like Graphic Designing and Photography. Whether you have a knack for taking pics or you just want to explore, you would definitely take out your cameras and get clicking.
+        </p>
+        <br>
+        <p style="color: chocolate;">
+          "A photography endeavour." -Some club member.
+        </p>
+      </div>
+
+      <div class='container' id="gallery">
         <div class="box">
           <div class="dream">
             <img src="./resources/gallery/1.jpg" alt="">
@@ -62,13 +75,28 @@
         </div>
       </div>
 
+      <br>
+      
+      <div id="contact" style="width: 100%;">
+        <h3 style="color: white;">If you like what we do here, you can follow us on our social media handles.</h3>
+
+        <a href="#" class="fa fa-facebook"></a>  
+        <a href="#" class="fa fa-twitter"></a>  
+        <a href="#" class="fa fa-pinterest"></a>  
+        <a href="https://instagram.com/drushyam?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a>  
+        <a href="https://www.youtube.com/channel/UC03z4eoifqYqSixnEzRTxLw" target="_blank" class="fa fa-youtube"></a>  
+        
+      
+    
+      </div>
+
     </div>
   </div>
 
   <footer class="footer-wrapper">
 
-    <div class="footer">
-      
+    <div class="footer" id='footer'>
+        <p>&copy Drushyam <script>document.write(new Date().getFullYear())</script></p>
     </div>
 
   </footer>
