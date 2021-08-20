@@ -14,6 +14,10 @@ body {
 
   background: url('./resources/background/mosaic/mosaic.png');
   font-family: 'Frank Ruhl Libre';font-size: 25px;
+
+
+  background: url('./resources/background/mosaic/mosaic.png');
+  font-family: 'Frank Ruhl Libre';font-size: 25px;
   width: 100%;
   font-size: 20px;
 	text-align: center;
@@ -48,27 +52,43 @@ body {
 
 /* navbar end */
 
-=======
+
   background: black;
   font-family: "source sans pro", sans-serif;
+
   width: 100%;
+  font-size: 20px;
+	text-align: center;
 }
 
-.header {
-  background: crimson;
-  width: 100%;
-  line-height: 1.5;
-  font-size: 12pt;
-  margin: 0;
-  top: 0;
-  width: 100%;
-  margin: 0 0 auto 0;
+/* navbar start */
+
+#navbar {
   z-index: 1024;
   height: 60px;
-  opacity: 1;
-  transition: position .4s,opacity .2s;
-  position: fixed;
+  background-color: #333; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  opacity: 0.8;
+  transition: top 0.4s; 
 }
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  text-shadow: 0 0 10px   #ff0000;
+}
+
+/* navbar end */
 
 .wrapper{
   display: flex;
@@ -80,8 +100,15 @@ body {
 
 .leftSideBar {
 
+  padding: 30px;
   margin-left: 1%;
-=======
+  width: 15%;
+  position: relative;
+  margin-top: 25px;
+  box-sizing: border-box;
+
+
+  margin-left: 1%;
   margin-left: 1%;  
   background: navy;
 
@@ -89,6 +116,7 @@ body {
   position: relative;
   margin-top: 25px;
   box-sizing: border-box;
+
 
   height: 100%;
   border: 5px solid whitesmoke;
@@ -98,29 +126,44 @@ body {
   float: left;
   display: block;
   color: white;
+  padding-bottom: 10px;
+  font-size: 20px;
+
   text-align: center;
   padding: 15px;
   font-size: 24px;
+
   text-decoration: none;
 }
 
 .leftSideBar a:hover {
   color: chocolate;
+
+  text-shadow: 0 0 10px   #ff0000;
 }
 
 .site-content {
   margin-top: 25px; 
-=======
+
+}
+
+.site-content {
+  margin-top: 25px; 
+
   
 }
 
 .site-content {
   margin-top: 25px;
 
+
   margin-left: 25px;
   margin-right: 1%;
   width: 90%;
   display: flex;
+
+  flex-direction: column;
+
 
   flex-direction: column;
   flex: 1 1 auto;
@@ -146,12 +189,30 @@ body {
 
 /* About: end */
 
-=======
+
   flex: 1 1 auto;
   justify-content: center;  
-  background: #fff;
   color: navy;
+  text-align: center;
 }
+
+/* About: start */
+
+.about-us{
+  font-size: 24px;
+  color: whitesmoke;
+  align-content: center;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+
+.about-us p::first-letter {
+  font-size: 200%;
+}
+
+/* About: end */
 
 
 /* Image gallery start */
@@ -198,6 +259,26 @@ body {
   padding-bottom: 15px;
   border-radius: 5px;
 }
+
+
+  /* For image overlay on hover */
+  .img-container {
+    width:100%
+  }
+
+  .img-container img {
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+.overlay {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  transition: .5s;
+  background-color: black;
+  border-radius: 5px;    
+
 
 /* Image gallery end */
 
@@ -272,7 +353,7 @@ body {
          -5px 5px #77aaff;
 
 }  
-=======
+
 .container .btn {
   margin: 40px 0 70px 0;
   background: #222;
@@ -280,13 +361,109 @@ body {
   border-radius: 5px;
 }
 
-.container .btn a{
-  color: #fff;
-  font-size: 2em;
-  text-decoration: none;
-  font-weight: bolder;
-  letter-spacing: 3px;
+.overlay h3 {
+  color: gold;
+  margin: auto;
+  padding: 10px;
 }
+
+
+.overlay a {
+  text-decoration: none;
+  color: gold;
+}
+
+.overlay a:hover {
+  color: chocolate;
+  text-shadow: 0 0 10px   #ff0000;
+}
+
+.img-container:hover img {
+  filter: blur(6px);
+  transition: .5s;
+}
+
+
+.img-container:hover .overlay {
+  opacity: 1;
+  transition: .5s;
+
+}
+
+
+/* Image gallery end */
+
+/* Footer */
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(23, 92, 124);
+  color: white;
+  text-align: center;
+}
+
+/* Social Media */
+
+.fa {  
+  padding: 20px;  
+  text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 4fr;  
+  transition-duration: 0.3s;
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}  
+.fa-twitter {  
+  background: #55ACEE;  
+  color: white;  
+}  
+.fa-pinterest {  
+  background: #cb2027;  
+  color: white;  
+}  
+.fa-linkedin {  
+  background: #007bb5;  
+  color: white;  
+}  
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;  
+}  
+.fa-google {  
+  background: #dd4b39;  
+  color: white;  
+}  
+.fa-snapchat-ghost {  
+  background: #fffc00;  
+  color: white;  
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}  
+.fa-skype {  
+  background: #00aff0;  
+  color: white;  
+}  
+.fa:hover {  
+    opacity: 1;
+    padding: 10px;
+    border: 1px solid #77aaff;
+    box-shadow:  -1px 1px #77aaff,
+         -2px 2px #77aaff,
+         -3px 3px #77aaff,
+         -4px 4px #77aaff,
+         -5px 5px #77aaff;
+
+}  
 
 /* Image gallery end */
 
