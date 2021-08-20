@@ -152,6 +152,50 @@ body {
   border-radius: 5px;
 }
 
+  /* For image overlay on hover */
+  .img-container {
+    width:100%
+  }
+
+  .img-container img {
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+.overlay {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  transition: .5s;
+  background-color: black;
+  border-radius: 5px;    
+
+}
+
+.overlay h3 {
+  color: gold;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.overlay a {
+  text-decoration: none;
+  color: gold;
+}
+
+.img-container:hover img {
+  filter: blur(6px);
+  transition: .5s;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+  transition: .5s;
+
+}
+
+
 /* Image gallery end */
 
 /* Footer */
